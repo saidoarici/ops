@@ -1,5 +1,7 @@
 # Personal Ops
 
+> Türkçe sürüm: [README.tr.md](README.tr.md)
+
 A local-first personal operations manager for macOS: tasks, projects, waiting
 items, reminders and routines, with a read-only observer that turns git and
 file activity into evidence, an assistant that runs your own Claude Code /
