@@ -1,0 +1,6 @@
+{
+  "identifier": "default",
+  "description": "Ana pencere için minimum çekirdek izinler",
+  "windows": ["main"],
+  "permissions": ["core:default"]
+}

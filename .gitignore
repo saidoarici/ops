@@ -1,0 +1,26 @@
+# Rust
+/target/
+**/*.rs.bk
+
+# Node / Vite
+node_modules/
+apps/desktop/dist/
+
+# Tauri build artefacts (regenerated on every build)
+apps/desktop/src-tauri/gen/schemas/
+
+# Local data — never committed
+*.db
+*.db-wal
+*.db-shm
+*.sock
+*.log
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# Editors
+.idea/
+.vscode/

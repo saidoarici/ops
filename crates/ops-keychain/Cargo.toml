@@ -1,0 +1,10 @@
+[package]
+name = "ops-keychain"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "macOS Keychain access for Personal Ops secrets (via /usr/bin/security)"
+
+[dependencies]
+ops-core = { path = "../ops-core" }
+tokio.workspace = true

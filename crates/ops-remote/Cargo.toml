@@ -1,0 +1,21 @@
+[package]
+name = "ops-remote"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Remote intake gateway (Telegram long-poll, WhatsApp outbound) for Personal Ops"
+
+# Güvenlik değişmezi: bu crate ops-agent'a ve daemon'a bağımlılık alamaz.
+# Remote dünya ile yerel execution arasındaki sınır derleme grafiğinde de
+# görünür (docs/architecture.md). Yalnızca ops-core (veri), ops-keychain ve
+# HTTP istemcisi.
+
+[dependencies]
+ops-core = { path = "../ops-core" }
+ops-keychain = { path = "../ops-keychain" }
+tokio.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tracing.workspace = true
+chrono.workspace = true
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls", "json"] }

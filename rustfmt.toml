@@ -1,0 +1,3 @@
+# Mevcut kod stiline en yakın ayar: 100 kolon, kısa yapılar tek satırda.
+max_width = 100
+use_small_heuristics = "Max"

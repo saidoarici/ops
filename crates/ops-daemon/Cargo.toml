@@ -1,0 +1,42 @@
+[package]
+name = "ops-daemon"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "personal-opsd background service (UDS API, scheduler, routines) and personal-opsctl CLI"
+default-run = "personal-opsd"
+
+[[bin]]
+name = "personal-opsd"
+path = "src/main.rs"
+
+[[bin]]
+name = "personal-opsctl"
+path = "src/bin/personal-opsctl.rs"
+
+[lib]
+name = "ops_daemon"
+path = "src/lib.rs"
+
+[dependencies]
+ops-core = { path = "../ops-core" }
+ops-keychain = { path = "../ops-keychain" }
+ops-observer = { path = "../ops-observer" }
+ops-agent = { path = "../ops-agent" }
+ops-remote = { path = "../ops-remote" }
+serde.workspace = true
+serde_json.workspace = true
+chrono.workspace = true
+anyhow.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+clap.workspace = true
+dirs.workspace = true
+argon2.workspace = true
+subtle.workspace = true
+uuid.workspace = true
+hex.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
